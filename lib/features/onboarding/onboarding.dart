@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'main.dart';
+import 'home_page.dart';
 
 class OnBoardingPage extends StatelessWidget {
   const OnBoardingPage({super.key});
@@ -12,19 +12,19 @@ class OnBoardingPage extends StatelessWidget {
         PageViewModel(
           title: 'Welcome to My App',
           body: 'This is the first page of the onboarding process.',
-          image: Image.asset('assets/images.jpeg'),
+          image: Image.asset('assets/onboarding/images.jpeg'),
           decoration: getPageDecoration(),
         ),
         PageViewModel(
           title: 'Welcome to My App',
           body: 'This is the second page of the onboarding process.',
-          image: Image.asset('assets/images-2.jpeg'),
+          image: Image.asset('assets/onboarding/images-2.jpeg'),
           decoration: getPageDecoration(),
         ),
         PageViewModel(
           title: 'Welcome to My App',
           body: 'This is the third page of the onboarding process.',
-          image: Image.asset('assets/images-3.jpeg'),
+          image: Image.asset('assets/onboarding/images-3.jpeg'),
           decoration: getPageDecoration(),
         ),
       ],
@@ -33,7 +33,7 @@ class OnBoardingPage extends StatelessWidget {
         Navigator.of(
           context,
         ).pushReplacement(
-          MaterialPageRoute(builder: (context) => const MyPage()),
+          MaterialPageRoute(builder: (context) => const OnboardingHomePage()),
         );
       },
       next: const Icon(Icons.arrow_forward),
@@ -41,8 +41,8 @@ class OnBoardingPage extends StatelessWidget {
       skip: const Text('Skip'),
       dotsDecorator: const DotsDecorator(
         color: Colors.green,
-        size: const Size.square(10),
-        activeSize: const Size(20, 10),
+        size: Size.square(10),
+        activeSize: Size(20, 10),
         activeColor: Colors.green,
         activeShape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(25.0)),

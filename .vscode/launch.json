@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Onboarding",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/entrypoints/main_onboarding.dart"
+    },
+    {
+      "name": "SnackBar",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/entrypoints/main_snack_bar.dart"
+    },
+    {
+      "name": "ListView",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/entrypoints/main_list_view.dart"
+    },
+    {
+      "name": "ListView2 (Animals)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/entrypoints/main_list_view2.dart"
+    }
+  ]
+}
