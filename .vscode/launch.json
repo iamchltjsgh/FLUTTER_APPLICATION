@@ -1,6 +1,7 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
     {
       "name": "Onboarding",
       "request": "launch",
@@ -24,6 +25,12 @@
       "request": "launch",
       "type": "dart",
       "program": "lib/entrypoints/main_list_view2.dart"
+    },
+    {
+      "name": "web",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/entrypoints/main_web.dart"
     }
   ]
 }
