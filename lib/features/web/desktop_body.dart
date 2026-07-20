@@ -46,7 +46,7 @@ class DesktopBody extends StatelessWidget {
               ],
             ),
           ),
-          Container(
+          SizedBox(
             //side panel
             width: 300,
             child: ListView(
